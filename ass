@@ -1,0 +1,15 @@
+#!/bin/bash
+
+counter=0
+sum=0
+
+while [[ $counter -le 100 ]]
+do
+        echo -n "$counter"
+if ! [ $((counter % 2)) -eq 0 ]
+then
+        echo "$sum"
+        sum=((sum + $counter))
+fi
+done
+
